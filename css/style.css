@@ -1,0 +1,58 @@
+.accordion {
+	width: 100%;
+	margin: 1em 0em;
+}
+
+.accordion h2 {
+	background: url(../img/arrow-204-24.png) no-repeat right center #9E38B0;
+	background-position: 98% 50%; 
+    margin-right: 200px !important;
+    color: #FFFFFF;
+    display: block;
+    margin: -1px 0 0 !important;
+    padding: 1.5em 1em;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    border-bottom: 6px solid;
+    border-bottom-color: #6F277D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+}
+
+.accordion p {
+	font-size: 1.0em;
+	line-height: 1.4em;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+
+.accordion h2.active {
+	background: url(../img/arrow-141-24.png) no-repeat right center #6844B7;
+	background-position: 98% 50%; 
+	border-bottom: 6px solid;
+    border-bottom-color: #4C3185;
+}
+
+.accordion h2:hover {
+	background-color: #6844B7;
+	border-bottom-color: #4C3185;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.accordion .accordion-info {
+	padding: 0em 1em;
+	margin-top: 0px !important;
+	border-style: solid;
+    border-width: medium;
+    border-color: #C0C0C0
+;
+ 
+}
+
+.accordion .slide{
+	margin-bottom: 10px;
+}
