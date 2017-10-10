@@ -18,13 +18,17 @@ $(document).ready(function() {
 	
 	// Assigned the JSON object to a variable 
 	var json = jsonData.blocks;
+	//This loop output the properites in the JSON object
 	for (var key in json) {
 		if (json.hasOwnProperty(key)) {
 			$("#accordion").append('<div class="slide">' + '<h2>' + json[key].heading + '</h2>' + '<div class="accordion-info">' + '<p>' + json[key].content + '</p>' + '</div>' + '</div>');
 		}
 	}
 
+	//This function hides the accordion content when the webpage loads
 	$('div.accordion-info').hide();
+	
+	// When the user clicks the heading the content slides out
 	$('.slide > h2').click(function() {
 		$(this).next().slideToggle('fast');
 		$(this).toggleClass('active');
